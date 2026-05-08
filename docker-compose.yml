@@ -1,7 +1,6 @@
-version: '3.8'
+version: "3.8"
 
 services:
-
   # # ===== MySQL =====
   # db:
   #   image: mysql:8.0
@@ -70,13 +69,13 @@ services:
     networks:
       - board-network
 
-# ===== 볼륨 =====
-# volumes:
-#   mysql-data:
-#     name: board-mysql-data
+  # ===== 볼륨 =====
+  # volumes:
+  #   mysql-data:
+  #     name: board-mysql-data
 
-# ===== 네트워크 =====
-networks:
-  board-network:
-    name: board-network
-    driver: bridge
+  # ===== 네트워크 =====
+  networks:
+    board-network:
+      name: board-network
+      driver: bridge
